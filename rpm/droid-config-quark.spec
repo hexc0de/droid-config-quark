@@ -20,7 +20,4 @@
 # We assume most devices will
 %define have_modem 1
 
-%define droid_target_armv7hl 1
-%define makefstab_skip_entries 1
-
 %include droid-configs-device/droid-configs.inc
