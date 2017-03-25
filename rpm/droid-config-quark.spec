@@ -15,7 +15,8 @@
 # For 4-5.5" device sizes, use these formulae as starting point:
 # YourDevicePPI/Jolla1PPI (245) (e.g. for OnePlusX PPI 441/245 = 1.8)
 # 4.5/DiagonalDisplaySizeInches * HorizontalDisplayResolution/540
-%define pixel_ratio 2.3
+#define pixel_ratio 2.3
+%define pixel_ratio 2.0
 
 # We assume most devices will
 %define have_modem 1
