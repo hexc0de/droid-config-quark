@@ -21,7 +21,6 @@ Requires:
 - libhybris-libGLESv2
 - libhybris-libOpenCL
 - libhybris-libOpenVG
-- libhybris-libcamera
 - libhybris-libhardware
 - libhybris-libis
 - libhybris-libnfc
