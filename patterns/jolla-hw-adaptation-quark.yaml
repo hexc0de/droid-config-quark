@@ -7,6 +7,7 @@ Requires:
 - droid-hal-quark
 - droid-hal-quark-img-boot
 - droid-hal-quark-kernel-modules
+- droid-hal-quark-detritus
 - droid-config-quark-sailfish
 - droid-config-quark-pulseaudio-settings
 - droid-config-quark-policy-settings
