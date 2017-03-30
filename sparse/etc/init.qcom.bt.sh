@@ -1,0 +1,1 @@
+/system/etc/init.qcom.bt.sh
