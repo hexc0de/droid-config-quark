@@ -1,11 +1,11 @@
 # These and other macros are documented in
 # ../droid-configs-device/droid-configs.inc
+
 %define device quark
 %define vendor motorola
+
 %define vendor_pretty Motorola
 %define device_pretty Droid Turbo
-
-%define dcd_path ./
 
 # Community HW adaptations need this
 %define community_adaptation 1
@@ -15,10 +15,6 @@
 # For 4-5.5" device sizes, use these formulae as starting point:
 # YourDevicePPI/Jolla1PPI (245) (e.g. for OnePlusX PPI 441/245 = 1.8)
 # 4.5/DiagonalDisplaySizeInches * HorizontalDisplayResolution/540
-#define pixel_ratio 2.3
-%define pixel_ratio 2.0
-
-# We assume most devices will
-%define have_modem 1
+%define pixel_ratio 2.3
 
 %include droid-configs-device/droid-configs.inc
