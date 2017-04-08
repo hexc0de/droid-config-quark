@@ -17,6 +17,7 @@ Requires:
 - droid-hal-version-quark
 
 # Hybris packages
+- libhybris
 - libhybris-libEGL
 - libhybris-libGLESv1
 - libhybris-libGLESv2
