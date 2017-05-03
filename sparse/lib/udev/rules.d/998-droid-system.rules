@@ -12,4 +12,8 @@ SUBSYSTEM=="misc", KERNEL=="log_main", SYMLINK+="alog/main"
 
 ENV{ID_PART_ENTRY_SCHEME}=="gpt", ENV{ID_PART_ENTRY_NAME}=="?*", IMPORT{program}="/bin/sh /lib/udev/platform-device $env{DEVPATH}", SYMLINK+="block/platform/$env{ANDROID_BLOCK_DEVICE}/by-name/$env{ID_PART_ENTRY_NAME}"
 
+ENV{ID_PART_ENTRY_SCHEME}=="gpt", ENV{ID_PART_ENTRY_NUMBER}=="?*", IMPORT{program}="/bin/sh /lib/udev/platform-device $env{DEVPATH}", SYMLINK+="block/platform/$env{ANDROID_BLOCK_DEVICE}/by-num/p$env{ID_PART_ENTRY_NUMBER}"
+
 ENV{ID_PART_ENTRY_SCHEME}=="gpt", ENV{ID_PART_ENTRY_NAME}=="?*", IMPORT{program}="/bin/sh /lib/udev/platform-device $env{DEVPATH}", SYMLINK+="block/bootdevice/by-name/$env{ID_PART_ENTRY_NAME}"
+
+ENV{ID_PART_ENTRY_SCHEME}=="gpt", ENV{ID_PART_ENTRY_NUMBER}=="?*", IMPORT{program}="/bin/sh /lib/udev/platform-device $env{DEVPATH}", SYMLINK+="block/bootdevice/by-num/p$env{ID_PART_ENTRY_NUMBER}"
