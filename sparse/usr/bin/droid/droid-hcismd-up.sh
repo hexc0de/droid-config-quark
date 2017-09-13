@@ -6,11 +6,11 @@
 MAXTRIES=15
  
 #setprop bluetooth.hciattach true
-setprop ro.qualcomm.bt.hci_transport smd
-setprop qcom.bt.dev_power_class 2
-setprop qcom.bt.le_dev_pwr_class 2
+#setprop ro.qualcomm.bt.hci_transport smd
+#setprop qcom.bt.dev_power_class 2
+#setprop qcom.bt.le_dev_pwr_class 2
  
-while true ; do
+seq 1 $MAXTRIES | while read i ; do
     rfkill unblock all
     echo 1 > /sys/module/hci_smd/parameters/hcismd_set
     if [ -e /sys/class/bluetooth/hci0 ] ; then
@@ -27,13 +27,9 @@ while true ; do
         echo 1 > /sys/module/hci_smd/parameters/hcismd_set
         exit 0
     fi
-    sleep 1
-    
-    let i=i+1
+    sleep 2
     if [ $i == $MAXTRIES ] ; then
         # must have gotten through all our retries, fail
         exit 1
     fi
 done
-rfkill unblock all
-hciconfig hci0 up
