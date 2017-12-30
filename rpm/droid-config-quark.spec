@@ -17,7 +17,4 @@
 # 4.5/DiagonalDisplaySizeInches * HorizontalDisplayResolution/540
 %define pixel_ratio 2.3
 
-%define have_modem 1
-%define have_bluetooth 1
-
 %include droid-configs-device/droid-configs.inc

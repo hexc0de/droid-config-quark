@@ -7,24 +7,19 @@ Requires:
 - droid-hal-quark
 - droid-hal-quark-img-boot
 - droid-hal-quark-kernel-modules
-- droid-hal-quark-detritus
+- droid-config-quark
 - droid-config-quark-sailfish
 - droid-config-quark-pulseaudio-settings
 - droid-config-quark-policy-settings
 - droid-config-quark-preinit-plugin
 - droid-config-quark-flashing
-- droid-config-quark-bluez4
+- droid-config-quark-bluez5
 - droid-hal-version-quark
 
 # Hybris packages
 - libhybris-libEGL
 - libhybris-libGLESv2
-- libhybris-libhardware
-- libhybris-libnfc
-- libhybris-libsync
 - libhybris-libwayland-egl
-- libhybris-tests
-- libhybris-libvibrator
 
 # Sensors
 - hybris-libsensorfw-qt5
