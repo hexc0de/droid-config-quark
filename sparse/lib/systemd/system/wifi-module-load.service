@@ -7,7 +7,7 @@ Type=simple
 RemainAfterExit=yes
 ExecStartPre=/bin/touch /dev/wcnss_wlan
 ExecStart=/sbin/modprobe qca_cld_wlan
-ExecStop=/sbin/modprobe -r qca_cld_wlan
+ExecStop=/sbin/rmmod wlan
 Restart=on-failure
 RestartSec=2
 
