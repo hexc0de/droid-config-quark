@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount for Android in /android
+Before=local-fs.target systemd-modules-load.service
+
+[Mount]
+What=/dev/mmcblk0p41
+Where=/android
+Type=f2fs
+Options=rw,nosuid,nodev,noatime,nodiratime,nobarrier,inline_xattr,inline_data
+
+TimeoutSec=5
+
+[Install]
+WantedBy=local-fs.target
