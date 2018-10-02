@@ -70,7 +70,7 @@ Requires:
 - rfkill
 
 # enable device lock and allow to select untrusted software
-- jolla-devicelock-plugin-encsfa
+- jolla-devicelock-daemon-encsfa
 
 # For GPS
 - geoclue-provider-hybris
@@ -78,6 +78,9 @@ Requires:
 # For FM radio on some QCOM devices
 #- qt5-qtmultimedia-plugin-mediaservice-irisradio
 #- jolla-mediaplayer-radio
+
+# For devices with SD Card
+#- sd-utils
 
 Summary: Jolla HW Adaptation quark
 
